@@ -6,25 +6,14 @@ Once the arduino has been programmed, you need only deal with ducky scripts on a
 
 ## Setup
 
-[![video link](http://imgur.com/2a1fe002-68fa-4046-b3a8-83e6fa2a22fc)](https://www.youtube.com/watch?v=ksvo1WDYQ7s)
+(modified)
 
-The instructions are for an arduino pro micro, it should work on any arduino using an atmega32u4 chip such as the leonardo.
-Simply upload Duckduino-microSD to your arduino, forma your microSD to FAT32 and save your script on the microSD card titled script.txt
-Lastly, connect a microsd breakout board using the pins below
-```
-Arduino ||| microSD module
+FingerprintUSBHost needed. Download https://github.com/keyboardio/FingerprintUSBHost 
 
-VCC  --->   VCC
-
-D15  --->   SCK
-
-D14  --->   MISO
-
-D16  --->   MOSI
-
-GND  --->   GND
-
-D4   --->   CS
+``` bash
+cd Duckduino-microSD
+wget https://raw.githubusercontent.com/keyboardio/FingerprintUSBHost/master/src/FingerprintUSBHost.cpp
+wget https://raw.githubusercontent.com/keyboardio/FingerprintUSBHost/master/src/FingerprintUSBHost.h
 ```
 
 ## Keep in mind...
