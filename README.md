@@ -8,13 +8,7 @@ Once the arduino has been programmed, you need only deal with ducky scripts on a
 
 (modified)
 
-FingerprintUSBHost needed. Download https://github.com/keyboardio/FingerprintUSBHost 
-
-``` bash
-cd Duckduino-microSD
-wget https://raw.githubusercontent.com/keyboardio/FingerprintUSBHost/master/src/FingerprintUSBHost.cpp
-wget https://raw.githubusercontent.com/keyboardio/FingerprintUSBHost/master/src/FingerprintUSBHost.h
-```
+Import Library [FingerprintUSBHost](https://github.com/keyboardio/FingerprintUSBHost) (Download .ZIP and import in Arduino IDE: Sketch -> Include Library -> add .ZIP library )
 
 ## Keep in mind...
 Long lines of strings may crash the arduino due to taking up too much RAM, if you have a line "STRING ..." over 300 characters then split it into separate lines of strings, this won't affect how your script runs, it just reduces how much of your script is held in memory at any one time.
